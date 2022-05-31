@@ -15,11 +15,14 @@ class Tile
   def change_val(val)
     unless given
       @value = val 
-      @given = true unless val == 0
     end
   end
 
+  def color
+    given ? :blue : :red
+  end
+
   def to_s
-    given ? @value.to_s : ' ' # TODO: Needs to be colorized
+    value == 0 ? ' ' : @value.to_s.colorize(color)
   end
 end

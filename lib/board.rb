@@ -41,6 +41,10 @@ class Board
     rows && cols && blocks
   end
 
+  def size
+    @grid.size
+  end
+
   private
 
   attr_reader :grid
