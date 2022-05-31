@@ -1,0 +1,11 @@
+* Inbox
+** [2022-05-31 Tue 10:31] pry
+load 'board.rb'
+load 'tile.rb'
+
+gr = Array.new(9) { Array.new(9) { Tile.new } }
+b = Board.new(gr)
+b.from_file
+
+
+[[file:~/Documents/code/Ruby/AA/ruby/references/sudoku/lib/board.rb][file:~/Documents/code/Ruby/AA/ruby/references/sudoku/lib/board.rb]]
